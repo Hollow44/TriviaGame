@@ -52,7 +52,10 @@ public class TriviaGame {
                 Scanner scanner = new Scanner(System.in);
                 int guess = scanner.nextInt();
                 if (guess == questions[i].getCorrectAnswer()) {
+                    System.out.println("Correct!");
                     score++;
+                } else {
+                    System.out.println("Incorrect :/");
                 }
             }
             System.out.println();
